@@ -64,6 +64,18 @@ Building WASM requires `trunk`:
 cargo install --locked trunk
 ```
 
+#### Running in a GitHub Workspace
+
+To get your own quick instance of the game, ready for hacking, by:
+
+1. Click "Use this template" --> "Open in a codespace"
+2. Wait for the workspace to finish setup (`post-create.sh`) - takes a while
+3. Open a new terminal (the original one won't work)
+4. Run the Wasm `trunk` command above - first fetch & build takes a while
+5. A notification will pop up with a link to your `trunk` server once finished - go play!
+
+Trunk will automatically rebuild and re-serve when you make changes to the files. If you'd like to save your changes, simply commit & push inside the workspace, and it will ask whether you'd like to save to a new public or private repo.
+
 ### Updating assets
 
 You should keep the `credits` directory up to date. The release workflow automatically includes the directory in every build.
